@@ -1,0 +1,195 @@
+@font-face{
+  font-family: fontDM;
+  src:url(./DMSans-Regular.ttf);
+}
+
+.App {
+  margin:0px;
+  height:100vh;
+  width:100vw;
+  background-color:#fafffa;
+  font-family: fontDM;
+  overflow-x: hidden;
+}
+.header{
+  background-color:#F8F9FA;
+  height:13vh;
+  width:100vw;
+}
+.name{
+  font-size:35px;
+  font-weight:600;
+}
+.title{
+  font-size:25px;
+}
+.form-group{
+  width:100vw;
+
+}
+.body{
+  height:auto;
+  background-color:#fafffa;
+  width:100vw; 
+}
+.location{
+  width:100vw;
+  height:40vw;
+}
+.map-div{
+  margin-top:5vh;
+  height:60vh;
+  width:100vw;
+}
+.add{
+  margin-top:12px;
+}
+.suggestions{
+  height: auto;
+  width:95vw;
+  border-bottom:2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+.suggestions-display{
+  font-size:18px;
+
+  cursor: pointer;
+}
+.col-xs-3{
+  width:48% !important;
+}
+.submit{
+  margin-top:5vh;
+}
+.error{
+  color:red;
+  font-size:15px;
+}
+.home{
+  height: 100vh;
+  width:100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.home-map{
+  height:85vh;
+  width:inherit;
+}
+.add{
+  position: absolute;
+  right:3vw;
+}
+.filter{
+  font-weight: 600;
+}
+.date{
+  margin-left:50%;
+}
+.bod{
+  padding:4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border:1px solid #EEEEEE;
+}
+.dob{
+ border-color:black;
+}
+.fi{
+  cursor:pointer;
+}
+.scroll{
+  padding-left:0px !important;
+  margin-left:0px !important;
+  height:100vh;
+  overflow-y:scroll;
+}
+.display-div{
+  height:auto;
+  cursor: pointer;
+  width:inherit;
+  border: 2px solid #EEEEEE;
+border-radius: 5px;
+margin-bottom: 2vh;
+
+}
+.contact-div{
+  height: 20vh;
+}
+.data-name{
+  font-size:24px;
+}
+.data-label{
+  font-size:15px;
+  margin-bottom: 0px !important;
+}
+.data{
+  font-size:18px;
+}
+.map-div-home{
+  padding-right:0px !important;
+}
+.mail{
+	text-decoration: underline !important;
+}
+a{
+  color:black !important;
+}
+a:hover{
+  text-decoration: none!important;
+}
+#WACContainer.WACContainer .WAC__messagesAndInputContainer{
+  background-color:#fafffa ;
+}
+.border-black{
+  border-color:black !important;
+}
+.marg{
+  padding-right:40px !important;
+}
+.rc-time-picker-input{
+  border:1px solid grey !important;
+  color:black !important;
+  border-radius: 0px !important;
+  font-size:17px !important;
+}
+#root > div > div > div > form > div:nth-child(3) > div:nth-child(3) > span > a{
+  display: none !important;
+  visibility: hidden !important;
+}
+.rc-time-picker-panel-inner{
+  width:inherit;
+  font-size:17px !important;
+}
+.padding-15{
+  padding-left:15px;
+  padding-right:15px;
+}
+.rc-time-picker-panel-select{
+  width:80px;
+  font-size: 17px !important;
+}
+@media (max-width:670px){
+  
+  
+  .home-map{
+    height:32vh !important;
+  }
+  .name{
+    font-size:30px;
+  } 
+  .scroll{
+    padding-left: 3vw !important;
+    height:100vw;
+  }
+  .header{
+    height:10vh;
+  }
+  .name{
+   font-size:25px; 
+  }
+  .add{
+    margin-top:0px;
+  }
+}
