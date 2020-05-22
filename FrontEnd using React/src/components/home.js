@@ -3,6 +3,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 import Loader from 'react-loader-spinner'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+//Home Screen route for the app
 export default class Home extends React.Component{
 	constructor(props){
 		super(props)
@@ -22,8 +23,9 @@ export default class Home extends React.Component{
 		this.filter =this.filter.bind(this)
 		this.filterRef=React.createRef()
 	}
+
+	//function for filter clicked
 	filter(val){
-		console.log('filter')
 		this.setState({mess:''})
 		var months = {
 	      May: "4",
@@ -112,8 +114,8 @@ export default class Home extends React.Component{
 			})
 		} else this.setState({mess:'No data Found',selected:val})
 	}
+	// Function for search by city 
 	change(e){
-		console.log('change')
 		this.setState({mess:''})
 		let val=e.target.value.toUpperCase()
 		if(val.length>0){
@@ -140,8 +142,8 @@ export default class Home extends React.Component{
 		}
 
 	}
+	//function when data in the list is clicked
 	divClicked(val){
-		console.log(val)
 		this.setState({
 			divId:val.id
 		})
@@ -158,7 +160,9 @@ export default class Home extends React.Component{
 				this.map.setZoom(13)
 			})
 		})
-	}
+	} 
+
+	//setting up here maps and importing bot 
 	componentDidMount(){
 		this.H=window.H
 		this.platform = new this.H.service.Platform({
@@ -184,9 +188,9 @@ export default class Home extends React.Component{
 
 	    //bot
 	    window.watsonAssistantChatOptions = {
-	      integrationID: "8524eb8e-7e4b-4b69-b73c-a19d80df56c2",
+	      integrationID: "58987fad-fdf6-4493-a71e-ec9d804ee0b1",
 	      region: "eu-gb", 
-	      serviceInstanceID: "bfb1f67d-828f-45f4-b22d-26241796871a", 
+	      serviceInstanceID: "88b4cea6-9031-4253-b46a-6c7f0e6c927d", 
 	      onLoad: function(instance) { instance.render()}
 	    }
 		  setTimeout(function(){
@@ -195,6 +199,8 @@ export default class Home extends React.Component{
 		    document.head.appendChild(t)
 		  })
 	}
+
+	//get Data stored in the database
 	getData(){
 		axios.get('https://java-spring-api-hack1.herokuapp.com/api/details/all')
 		.then((res)=>{
@@ -212,8 +218,7 @@ export default class Home extends React.Component{
 						loader:false,
 						mess:'No data Found.'
 					})
-				console.log(res.data)
-			}
+				
 			else{
 				this.setState({
 					loader:false,

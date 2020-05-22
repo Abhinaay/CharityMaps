@@ -4,6 +4,9 @@ import Form from './components/addForm'
 import Home from './components/home'
 import NotFound from './components/notfound'
 import {Route ,BrowserRouter as Router , Switch} from 'react-router-dom'
+
+//Setting up Routes for the app
+
 class App extends React.Component{
   render(){
     return (
