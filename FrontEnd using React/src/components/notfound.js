@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+//Not Found Route
 export default class Nor extends React.Component{
 	render(){
 		return(

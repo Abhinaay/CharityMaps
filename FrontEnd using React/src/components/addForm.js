@@ -5,6 +5,8 @@ import axios from 'axios'
 import {Redirect,Link} from 'react-router-dom'
 import moment from 'moment'
 import 'rc-time-picker/assets/index.css'
+
+//Add info route
 export default class Form extends React.Component{
 	constructor(props){
 		super(props)
@@ -34,6 +36,8 @@ export default class Form extends React.Component{
 		this.labelClick=this.labelClick.bind(this)
 		this.submit=this.submit.bind(this)
 	}
+
+	//Function when submit is clicked
 	submit(e){
 		e.preventDefault()
 		if(this.state.time==='00:00'){
@@ -102,6 +106,8 @@ export default class Form extends React.Component{
 
 		}
 	}
+
+	//Set map in the form
 	componentDidMount(){
 		this.H=window.H
 		this.platform = new this.H.service.Platform({
@@ -123,9 +129,9 @@ export default class Form extends React.Component{
 	    this.setState({ map })
 	    //bot
 	    window.watsonAssistantChatOptions = {
-	      integrationID: "8524eb8e-7e4b-4b69-b73c-a19d80df56c2",
+	      integrationID: "58987fad-fdf6-4493-a71e-ec9d804ee0b1",
 	      region: "eu-gb", 
-	      serviceInstanceID: "bfb1f67d-828f-45f4-b22d-26241796871a", 
+	      serviceInstanceID: "88b4cea6-9031-4253-b46a-6c7f0e6c927d", 
 	      onLoad: function(instance) { instance.render()}
 	    }
 		  setTimeout(function(){
@@ -135,6 +141,7 @@ export default class Form extends React.Component{
 		  })
 	    
 	}
+	//Function to autosuggest location
 	locationChange(e){
 		e.preventDefault()
 		if(this.locationRef.current.value.length>0){
@@ -153,6 +160,7 @@ export default class Form extends React.Component{
 		}
 
 	}
+	//Function when location element is clicked 
 	labelClick(val){
 		this.setState({
 			showdiv:false
@@ -172,11 +180,14 @@ export default class Form extends React.Component{
 			})
 		})
 	}
+	//date changed
+
 	dateChanged(val){
 		this.setState({
 			date:val
 		})
 	}
+	//on time change
 	timeChanged(val){
 		this.setState({
 			time:val.format('HH:mm')
