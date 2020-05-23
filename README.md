@@ -6,12 +6,12 @@
 
 ## Overview
 
-### What is the problem?
+> ### What is the problem?
 In times of COVID-19 crisis, it is very important to help the needy in whatever way we can. Kindness and empathy makes a human being more humane. When a person is in dire need, one who is better provided than him must help the needy person with all sorts of support he can serve. This is what most us are doing in this pandemic by donating food and essential products to the poor and underprivileged people. But I want to draw the attention of readers towards few major problems that should be addressed to maintain calm environment during the panic:
 * Some localities are not getting the appropriate help while few, which are easily reachable by people, are getting the resources.
 * It happens that many people reach to distribute food and other resources in a place together. This results in more gathering in a particular place hence increases the risk of virus.
 
-### How can technology help?
+> ### How can technology help?
 Our platform aims to solve the above mentioned problems related to distribution of food and other resources that various people, as well as organizations, are providing to the needy people these days. We aim to solve this by a platform where people before going out to distribute products, reserve the area (locality) in which they are willing to distribute. In this way, other people will get to know that the essential goods are already distributed in a particular area and they can distribute in some other locality. This will help there motive of distribution and will serve the real cause that 'No One' is without food.
 Using our platform the chances of equal distribution of resources will increase highly and help will be reached to the needy. People can see, who is going to distribute the resources, where and when are they going to distribute, what type of resources are distributed in a particular region. So, people can plan their donations accordingly.
 
@@ -43,20 +43,20 @@ We created the frontend for our website using ‘React JS framework’ and integ
 
 We haven’t found any solution similar to our website yet. We aim to reach out as many people as we can so that every needy person can get adequate essential resources in this crisis situation and can get proper help and support in coping with the pandemic.
 
-> ### Home Page
+## Home Page
 ![Image can't be loaded at the moment.](Images/Screenshot1.png "Home Page")
 
-> ### Add Info Page (I)
+## Add Info Page (I)
 ![Image can't be loaded at the moment.](Images/Screenshot2.png "Add Info Page")
 
-> ### Add Info Page (II)
+## Add Info Page (II)
 ![Image can't be loaded at the moment.](Images/Screenshot3.png "Add Info Page")
 
 ## SOLUTION ARCHITECTURE
 
 ![Image can't be loaded at the moment.](Images/SolutionArchitecture.png "Solution Architecture")
 
-### How it works?
+> ### How it works?
 * When user visits the website and wants to add information regarding Donation places, he/she can click on add info button. This will direct the user to a new page wherein he/she will have to fill all the necessary details. 
 * After submitting the information, a Rest API will be called and after the application of business logic the details will be added in the IBM Db2 database which is hosted on IBM cloud. 
 * If the user wants to know the latest entries, he can get the same from Home Page. Home page loads the data from backend using another Rest API.
