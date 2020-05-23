@@ -5,7 +5,7 @@
 
 
 ## Overview
----
+
 ### What is the problem?
 In times of COVID-19 crisis, it is very important to help the needy in whatever way we can. Kindness and empathy makes a human being more humane. When a person is in dire need, one who is better provided than him must help the needy person with all sorts of support he can serve. This is what most us are doing in this pandemic by donating food and essential products to the poor and underprivileged people. But I want to draw the attention of readers towards few major problems that should be addressed to maintain calm environment during the panic:
 * Some localities are not getting the appropriate help while few, which are easily reachable by people, are getting the resources.
@@ -16,11 +16,11 @@ Our platform aims to solve the above mentioned problems related to distribution 
 Using our platform the chances of equal distribution of resources will increase highly and help will be reached to the needy. People can see, who is going to distribute the resources, where and when are they going to distribute, what type of resources are distributed in a particular region. So, people can plan their donations accordingly.
 
 ## Video
----
+
 [![IMAGE Can't be loaded at the moment, but link is working properly.](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ## Solution Description
----
+
 There is a proverb that goes like this, "a friend in need is a friend indeed'. But it can be said that a human in need is a human indeed. It is our duty as a human being and an Indian citizen that we help each other grow and thrive. Most of us are helping each other in best possible ways. We are donating food and other resources to the needy.
 
 But we observed some shortcomings in the process of resources distribution. Few areas, which are easily accessible by people and organization are getting full support but few localities which are not easily reachable or which are not in lime-light, are not getting adequate help. Another major issue we observed is that unknowingly many people are going to distribute food and resources to a particular area at the same time. This leads to more crowd which in turn increases the risk of virus. 
@@ -44,17 +44,17 @@ We created the frontend for our website using ‘React JS framework’ and integ
 We haven’t found any solution similar to our website yet. We aim to reach out as many people as we can so that every needy person can get adequate essential resources in this crisis situation and can get proper help and support in coping with the pandemic.
 
 > ### Home Page
-![Image can't be loaded at the moment.](https://github.com/Abhinaay/CharityMaps/Images/Screenshot1.png "Home Page")
+![Image can't be loaded at the moment.](Images/Screenshot1.png "Home Page")
 
 > ### Add Info Page (I)
-![Image can't be loaded at the moment.](https://github.com/Abhinaay/CharityMaps/Images/Screenshot2.png "Add Info Page")
+![Image can't be loaded at the moment.](Images/Screenshot2.png "Add Info Page")
 
 > ### Add Info Page (II)
-![Image can't be loaded at the moment.](https://github.com/Abhinaay/CharityMaps/Images/Screenshot3.png "Add Info Page")
+![Image can't be loaded at the moment.](Images/Screenshot3.png "Add Info Page")
 
 ## SOLUTION ARCHITECTURE
----
-![Image can't be loaded at the moment.](https://github.com/Abhinaay/CharityMaps/Images/SolutionArchitecture.png "Solution Architecture")
+
+![Image can't be loaded at the moment.](Images/SolutionArchitecture.png "Solution Architecture")
 
 ### How it works?
 * When user visits the website and wants to add information regarding Donation places, he/she can click on add info button. This will direct the user to a new page wherein he/she will have to fill all the necessary details. 
@@ -65,7 +65,7 @@ We haven’t found any solution similar to our website yet. We aim to reach out 
 * If the user have any queries he can ask from the chatbot (HOPE), which is linked with Watson Assistant. Watson Assistant uses natural language processing and machine learning to extract entities and intents of the user question and accordingly responds back. The answer is displayed on the user screen. 
 
 ## Future Scope
----
+
 * Currently we just show the data that user (community) sends us but in future we will be extending this to book slots for donations.
 * Using an in-house GIS (Geographic Information System) for locating and suggesting possible areas that are indeed slums and actually need help. 
 * Watson assistant will be connected with Watson discovery which will access all the data entered by the user or from a third party. 
@@ -73,5 +73,5 @@ We haven’t found any solution similar to our website yet. We aim to reach out 
 * Extend to third-party app integrations like WhatsApp, Facebook Messenger and Google Assistant.
 
 ## Disclosures
----
+
 This Platform is intended to provide information based on community input i.e. the information provided by the public to help you make decisions for donating the essential products wisely and with proper awareness. We do not undertake any responsibility of the information provided on the platform. We totally depend on maturity of community and its trustworthiness.
