@@ -1,7 +1,7 @@
 package application.dto;
 
 public class DetailsDto {
-
+// This Class is the Data Transfer Object for Details. Its role is in the transfer for details as an object.
 	private Long id;
 	private String name;
 	private String phone;

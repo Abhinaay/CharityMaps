@@ -19,10 +19,12 @@ import application.rest.service.DetailsService;
 @RestController
 @RequestMapping("/api/details")
 public class DetailsController {
-
+// It is a Rest Controller
 	@Autowired
 	private DetailsService detailsService;
 
+// CrossOrigin Annotation is used to Enable CORS (Cross Origin Resource Sharing) for this method.
+// This method is called when a user calls an API to add an entry into the database.
 	@CrossOrigin
 	@PostMapping("/add")
 	public ResponseEntity createPost(@RequestBody DetailsDto detailsDto)
@@ -32,7 +34,9 @@ public class DetailsController {
 		return new ResponseEntity<>(HttpStatus.OK);
 		
 	}
-	
+
+// CrossOrigin Annotation is used to Enable CORS (Cross Origin Resource Sharing) for this method.
+// This method is called when a user calls an API to show the information stored in the database.
 	@CrossOrigin
 	@GetMapping("/all")
 	public ResponseEntity<List<DetailsDto>> showAllPosts() {

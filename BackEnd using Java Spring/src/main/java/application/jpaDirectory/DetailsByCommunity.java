@@ -14,7 +14,10 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table
 public class DetailsByCommunity {
-	
+// It is an Entity Class.
+// Id Annotation states that the field works like a primary key.
+// Not Blank Annotation is used to create a validation for empty fields. It states that blank entries are not valid in the table.
+// Lob Annotation states that the field can store large number of characters.
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
@@ -53,6 +56,8 @@ public class DetailsByCommunity {
 	@Column
 	private String comments;
 	
+// Getters and Setters are generated.
+
 	public Long getId() {
 		return id;
 	}
