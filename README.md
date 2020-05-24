@@ -17,7 +17,7 @@ Using our platform the chances of equal distribution of resources will increase 
 
 ## Video
 
-[![IMAGE Can't be loaded at the moment, but link is working properly.](https://youtu.be/VUiMKt0Y4ao/0.jpg)](https://www.youtube.com/watch?v=VUiMKt0Y4ao)
+[![IMAGE Can't be loaded at the moment, but link is working properly.](https://img.youtube.com/vi/VUiMKt0Y4ao/1.jpg)](https://www.youtube.com/watch?v=VUiMKt0Y4ao)
 
 ## Solution Description
 
